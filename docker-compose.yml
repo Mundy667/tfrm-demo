@@ -1,5 +1,7 @@
 version: '2'
+
 services:
+
   redis:
     image: redis:3.2.6-alpine
     volumes:
@@ -8,9 +10,9 @@ services:
     command: redis-server --appendonly yes
 
   webapp:
+    image: webapp_build:latest
     depends_on:
       - redis
-    image: webapp_build:latest
     links:
       - redis
     ports:

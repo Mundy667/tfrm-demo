@@ -3,6 +3,23 @@ Demo for Technologie Forum Rhein-Main 2017
 
 ## Instructions
 
+Show whalesay:
+```
+docker run docker/whalesay cowsay Hallo Technologieforum!
+```
+
+Show running containers:
+```
+docker ps
+```
+
+Show persistent volumes:
+```
+docker volume ls
+```
+
+Show ```Dockerfile```
+
 First, build the current codebase:
 ```
 docker build . -t "webapp_build"
