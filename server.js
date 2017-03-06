@@ -62,7 +62,6 @@ module.exports = function(opts){
             res.end('ok')
           })
         })
-
       }))
     }
   })
